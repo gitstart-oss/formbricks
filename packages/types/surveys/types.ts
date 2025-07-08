@@ -545,6 +545,7 @@ export const ZSurveyConsentQuestion = ZSurveyQuestionBase.extend({
   type: z.literal(TSurveyQuestionTypeEnum.Consent),
   html: ZI18nString.optional(),
   label: ZI18nString,
+  placeholder: ZI18nString.optional(),
 });
 
 export type TSurveyConsentQuestion = z.infer<typeof ZSurveyConsentQuestion>;
